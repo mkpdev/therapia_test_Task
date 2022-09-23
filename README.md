@@ -1,25 +1,27 @@
-# README
+## Install
+### Clone the repository
+```bash
+git clone github.com/mkpdev/therapia_test_Task
+cd therapia_test_Task
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Check your Ruby version
+```bash
+ruby -v
+```
+use ruby -3.0.2
+If not installed, install the right ruby version using rvm (it could take a while):
+```bash
+rvm install "ruby-3.0.2"
+```
 
-Things you may want to cover:
+### Update database.yml file
+In database.yml file, edit the database configuration as required.
+### Initialize the database
+```ruby
+rails db:create db:migrate db:seed
+```
+### Serve
+```ruby
+rails s
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# therpia_test_task
